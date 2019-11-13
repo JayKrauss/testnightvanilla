@@ -1,0 +1,155 @@
+body {
+	font-family: 'Comfortaa', sans-serif;
+    background-image: url('../images/mpabackground.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#main-area{
+    background-image: url('../images/tray.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 8%;
+    margin-left: 0%;
+    width: 1250px;
+    height: 900px;
+}
+
+.hexagon-grid-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	margin: 0 auto;
+	padding: 0;
+    list-style: none;
+
+}
+
+.badge {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -5px 19px;
+    width: 65px;
+    background: linear-gradient(to bottom right, #228B22 0%, #006400 100%);
+    color: #ffb300;
+    height: 100px;
+    border-radius: 10px;
+    top: 0;
+    transform: rotate(90deg);
+    transition: all 0.2s ease;
+}
+
+.outer {
+  background: linear-gradient(to bottom right, #505050 0%, #000000 100%);
+}
+
+.water {
+    background: linear-gradient(to bottom right, #03254c 0%, #187bcd 100%);
+}
+
+.local img{
+    left:-100%; right:-100%;
+    width: auto; height:85%;
+    margin:0 auto;  
+    z-index: 5;
+    transform: rotate(-95deg);
+}
+
+.castle img{
+    left:-100%; right:-100%;
+    width: auto; height:85%;
+    margin:0 auto;  
+    z-index: 5;
+    transform: rotate(-95deg);
+}
+
+.chest img{
+    left:-100%; right:-100%;
+    width: auto; height:35%;
+    margin:0 auto;  
+    z-index: 5;
+    transform: rotate(-90deg);
+}
+
+.cave img{
+    left:-100%; right:-100%;
+    width: auto; height:55%;
+    margin:0 auto;  
+    z-index: 5;
+    transform: rotate(-90deg);
+}
+
+.ruins img{
+    left:-100%; right:-100%;
+    width: auto; height:85%;
+    margin:0 auto;  
+    z-index: 5;
+    transform: rotate(-90deg);
+}
+
+.gate img{
+    left:-100%; right:-100%;
+    width: auto; height:85%;
+    margin:0 auto;  
+    z-index: 5;
+    transform: rotate(-85deg);
+}
+
+.badge:before,
+.badge:after {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	background: inherit;
+	content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.badge:before {
+	transform: rotate(60deg);
+	}
+.badge:after {
+	transform: rotate(-60deg);
+	}
+
+.badge:before,
+.badge:after {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	background: inherit;
+	content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.outer:before {
+	transform: rotate(60deg);
+	}
+.outer:after {
+	transform: rotate(-60deg);
+	}
+
+.option:hover {
+    top: -10px;
+    cursor: grabbing;
+}
+
+
+	.hexagon-grid-container {
+		width: 1100px;
+	}
+	.badge:nth-child(20n+11) {
+		margin-left: 70px;
+	}
