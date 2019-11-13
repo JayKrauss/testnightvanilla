@@ -253,8 +253,7 @@ case 10:
       mapName[y][x] = 10;
   break;
 default:
-  let addOption = (type * 10) + 3;
-  mapName[y][x] = addOption;
+  mapName[y][x] = 3;
   break;
 }
 }
@@ -302,8 +301,8 @@ mapGenerate(map);
 mapOptions(map)
 mapGenerate(mapList.map1); 
 
-$('.option').on('click', function(){
-    console.log(this.id)
+$('#play-field').on('click', '.option', function(){
+    console.log("Clicked!")
 
     let splitID = this.id.split('-');
     let y = splitID[0];
@@ -319,6 +318,6 @@ $('.option').on('click', function(){
     console.log(map);
         
     handleMove(currentTile, currentType, coords, tileType);
-    });
+});
 
 });
